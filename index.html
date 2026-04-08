@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reaction Time Lab | HCI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <h1>Reaction Time Lab</h1>
+        <p class="subtitle">HCI • Week 07 • Keyboard Response Test</p>
+      </div>
+
+      <div id="stimulus" class="stimulus">SPACE<br />to<br />Start</div>
+
+      <div class="buttons">
+        <button id="btnA" title="Press 'A' for letters">Letter (A)</button>
+        <button id="btnSpace" title="Press 'Space' to start/reset">Start Over (Space)</button>
+        <button id="btnL" title="Press 'L' for numbers">Number (L)</button>
+      </div>
+
+      <div class="stats">
+        <div>
+          <div>Trials</div>
+          <div><span id="trials">0</span> / 10</div>
+        </div>
+        <div>
+          <div>Correct</div>
+          <div><span id="correct">0</span></div>
+        </div>
+        <div>
+          <div>Mistakes</div>
+          <div><span id="mistakes">0</span> / 3</div>
+        </div>
+        <div>
+          <div>Avg RT</div>
+          <div><span id="avg">—</span> ms</div>
+        </div>
+      </div>
+
+      <div id="feedback" class="feedback"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
